@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+    },
+    "functions": [],
+    "variables": {},
+    "resources": [
+        { 
+            "apiVersion": "2015-01-01", 
+            "name": "DatabricksTemplate", 
+            "type": "Microsoft.Resources/deployments", 
+            "properties": { 
+              "mode": "incremental", 
+              "templateLink": {
+                 "uri":"https://raw.githubusercontent.com/Dixit-Pathak/ARM-templates/master/Databricks/template.json",
+                 "contentVersion":"1.0.0.0"
+              }, 
+              "parametersLink": { 
+                 "uri":"https://raw.githubusercontent.com/Dixit-Pathak/ARM-templates/master/Databricks/parameters.json",
+                 "contentVersion":"1.0.0.0"
+              } 
+            } 
+        } ,
+        { 
+            "apiVersion": "2015-01-01", 
+            "name": "StorageAccountTemplate", 
+            "type": "Microsoft.Resources/deployments", 
+            "properties": { 
+              "mode": "incremental", 
+              "templateLink": {
+                 "uri":"https://raw.githubusercontent.com/Dixit-Pathak/ARM-templates/master/storage_account/template.json",
+                 "contentVersion":"1.0.0.0"
+              }, 
+              "parametersLink": { 
+                 "uri":"https://raw.githubusercontent.com/Dixit-Pathak/ARM-templates/master/storage_account/parameters.json",
+                 "contentVersion":"1.0.0.0"
+              } 
+            } 
+        },
+        { 
+            "apiVersion": "2015-01-01", 
+            "name": "SynapseSqlPoolTemplate", 
+            "type": "Microsoft.Resources/deployments", 
+            "properties": { 
+              "mode": "incremental", 
+              "templateLink": {
+                 "uri":"https://raw.githubusercontent.com/Dixit-Pathak/ARM-templates/master/synapse_sql_pool/template.json",
+                 "contentVersion":"1.0.0.0"
+              }, 
+              "parametersLink": { 
+                 "uri":"https://raw.githubusercontent.com/Dixit-Pathak/ARM-templates/master/synapse_sql_pool/parameters.json",
+                 "contentVersion":"1.0.0.0"
+              }
+               
+            } 
+        }
+        ],
+    "outputs": {}
+}

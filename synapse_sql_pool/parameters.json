@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sqlServerName": {
+            "value": "sample-sql-dx"
+        },
+        "sqlAdministratorLogin": {
+            "value": "ladmin"
+        },
+        "sqlAdministratorPassword": {
+            "value": "P@ssw0rd"
+        },
+        "dataWarehouseName": {
+            "value": "sample-db-dx"
+        }
+        
+    }
+}
