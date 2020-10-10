@@ -6,7 +6,7 @@
             "value": "eastus2"
         },
         "storageAccountName": {
-            "value": "dxstorageapp00"
+            "value": "dxstorageapp01"
         },
         "accountType": {
             "value": "Standard_LRS"

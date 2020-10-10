@@ -2,11 +2,11 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "administratorLogin": {
+        "sqlAdministratorLogin": {
             "type" : "string",
             "defaultValue" : "loginadmin"
         } ,
-        "administratorLoginPassword": {
+        "sqlAdministratorPassword": {
             "type" : "string"
         }
     },
@@ -56,8 +56,8 @@
                  "contentVersion":"1.0.0.0"
               }, 
               "parametersLink": { 
-                 "administratorLogin":{"value": "[parameters('administratorLogin')]"} ,
-                 "administratorLoginPassword":{"value": "[parameters('administratorLoginPassword')]"},
+                 "sqlAdministratorLogin":{"value": "[parameters('sqlAdministratorLogin')]"} ,
+                 "sqlAdministratorPassword":{"value": "[parameters('sqlAdministratorPassword')]"},
                  "uri":"https://raw.githubusercontent.com/Dixit-Pathak/ARM-templates/master/synapse_sql_pool/parameters.json",
                  "contentVersion":"1.0.0.0"
               }

@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sqlServerName": {
-            "value": "sample-sql-dx"
+            "value": "sample-sql-dxx"
         },
         "sqlAdministratorLogin": {
             "value": "ladmin"
@@ -12,7 +12,7 @@
             "value": "P@ssw0rd"
         },
         "dataWarehouseName": {
-            "value": "sample-db-dx"
+            "value": "sample-db-dxx"
         }
         
     }
